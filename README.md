@@ -1,16 +1,10 @@
-# task1_onboarding_auth
+# Task 1 => Algoriza
 
-A new Flutter project.
+## Task Images
 
-## Getting Started
+![alt text](https://fv9-4.failiem.lv/thumb_show.php?i=ehjpe4vfc&view)
+![alt text](https://fv9-3.failiem.lv/thumb_show.php?i=9cn7hqs2w&view)
+![alt text](https://fv9-1.failiem.lv/thumb_show.php?i=h6zhfyy4x&view)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## APk
+Download from [here](https://disk.yandex.com/d/g82WWsK6YDasUQ)
