@@ -23,6 +23,8 @@ class AuthDonotHaveAccount extends GetView<AuthController> {
         GestureDetector(
           onTap: () {
             controller.isSignIn.value = !controller.isSignIn.value;
+            controller.formKey.currentState!.reset();
+            controller.userPhoneController.clear();
           },
           child: Obx(
             () => Text(
