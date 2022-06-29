@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/views/onboarding/onboarding.dart';
-import 'core/bindings/bindings.dart';
+import 'package:task1_onboarding_auth/core/routes/app_pages.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +16,8 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Onboarding - Task 1',
       debugShowCheckedModeBanner: false,
-      home: const Onboarding(),
-      initialBinding: OnboardingBindings(),
+      initialRoute: AppRoutes.goToOnboardingRoute(),
+      getPages: AppRoutes.routes,
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/controllers/auth_controller.dart';
+import '../../../controllers/auth_controller.dart';
 
 class AuthForm extends GetView<AuthController> {
   const AuthForm({Key? key}) : super(key: key);
@@ -37,6 +37,7 @@ class AuthForm extends GetView<AuthController> {
                     controller: controller.userPhoneController,
                     keyboardType: TextInputType.phone,
                     decoration: const InputDecoration(
+                      hintText: '+20 1987654321',
                       border: InputBorder.none,
                     ),
                     validator: (val) =>

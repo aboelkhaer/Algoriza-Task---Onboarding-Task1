@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/controllers/controllers.dart';
+import '../../../controllers/controllers.dart';
 
 class OnboardingTitle extends GetView<OnboardingController> {
   final int index;

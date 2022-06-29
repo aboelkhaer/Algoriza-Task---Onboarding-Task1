@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/controllers/controllers.dart';
+import '../../../controllers/controllers.dart';
 
 class OnboardingDots extends GetView<OnboardingController> {
   const OnboardingDots({Key? key}) : super(key: key);

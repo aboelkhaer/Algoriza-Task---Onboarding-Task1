@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/core/bindings/auth_bindings.dart';
-import 'package:task1_onboarding_auth/views/auth/auth.dart';
 import '../../controllers/controllers.dart';
 import '../../core/utilities/scroll_effect.dart';
-import '../widgets/custom_button.dart';
 import 'screen_widgets/screen_widgets.dart';
 
 class Onboarding extends GetView<OnboardingController> {
@@ -47,21 +44,7 @@ class Onboarding extends GetView<OnboardingController> {
             bottom: controller.getSize(context).height * 0.05,
             left: 0,
             right: 0,
-            child: CustomButtom(
-              onPressed: () {
-                controller.isLastPage
-                    ? Get.to(const AuthScreen(), binding: AuthBindings())
-                    : controller.forwardPage();
-              },
-              child: Obx(
-                () => Text(
-                  controller.isLastPage ? 'Get Started' : 'Next',
-                  style: const TextStyle(
-                    color: Colors.white,
-                  ),
-                ),
-              ),
-            ),
+            child: const OnboardingStartButtton(),
           ),
           Positioned(
             bottom: controller.getSize(context).height * 0.035,

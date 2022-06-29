@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/views/auth/screen_widgets/screen_widgets.dart';
-import 'package:task1_onboarding_auth/views/widgets/custom_button.dart';
+
 import '../../controllers/controllers.dart';
+import '../widgets/custom_button.dart';
+import 'screen_widgets/screen_widgets.dart';
 
 class AuthScreen extends GetView<AuthController> {
   const AuthScreen({Key? key}) : super(key: key);
@@ -38,10 +39,7 @@ class AuthScreen extends GetView<AuthController> {
                         onPressed: () {
                           if (controller.formKey.currentState!.validate()) {}
                         }),
-                    Container(
-                      margin: const EdgeInsets.only(top: 10, bottom: 30),
-                      child: const Text('OR'),
-                    ),
+                    const AuthOrLine(),
                     const AuthGoogle(),
                     const AuthDonotHaveAccount(),
                     const SizedBox(height: 30),

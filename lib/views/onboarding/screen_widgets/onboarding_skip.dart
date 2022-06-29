@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/controllers/controllers.dart';
 
-import '../../../core/bindings/bindings.dart';
-import '../../auth/auth.dart';
+import '../../../controllers/controllers.dart';
 
 class OnboardingSkip extends GetView<OnboardingController> {
   const OnboardingSkip({Key? key}) : super(key: key);

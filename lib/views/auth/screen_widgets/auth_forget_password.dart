@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/controllers/auth_controller.dart';
+import '../../../controllers/auth_controller.dart';
 
 class AuthForgetPassword extends GetView<AuthController> {
   const AuthForgetPassword({Key? key}) : super(key: key);

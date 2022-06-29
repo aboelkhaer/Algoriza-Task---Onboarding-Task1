@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/core/bindings/auth_bindings.dart';
-import 'package:task1_onboarding_auth/views/auth/auth.dart';
+import 'package:task1_onboarding_auth/core/routes/app_pages.dart';
 
 import '../models/onboarding_model.dart';
 
@@ -11,8 +10,7 @@ class OnboardingController extends GetxController {
   bool get isLastPage => selectedIndex.value == onboardingList.length - 1;
   forwardPage() {
     if (isLastPage) {
-      Get.to(() => const AuthScreen(),
-          binding: AuthBindings(), transition: Transition.fadeIn);
+      Get.toNamed(AppRoutes.authScreen);
     }
     if (!isLastPage) {
       pageController.nextPage(duration: 300.milliseconds, curve: Curves.ease);

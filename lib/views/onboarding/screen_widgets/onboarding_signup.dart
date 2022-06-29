@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/core/bindings/auth_bindings.dart';
-
-import '../../auth/auth.dart';
+import 'package:task1_onboarding_auth/core/routes/app_pages.dart';
 
 class OnboardingSignUp extends StatelessWidget {
   const OnboardingSignUp({Key? key}) : super(key: key);
@@ -18,7 +16,7 @@ class OnboardingSignUp extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            Get.to(() => const AuthScreen(), binding: AuthBindings());
+            Get.toNamed(AppRoutes.authScreen);
           },
           child: const Text(
             'Sign Up',

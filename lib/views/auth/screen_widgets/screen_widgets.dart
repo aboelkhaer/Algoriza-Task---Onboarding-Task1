@@ -4,3 +4,4 @@ export 'auth_title.dart';
 export 'auth_image.dart';
 export 'auth_form.dart';
 export 'auth_google_button.dart';
+export 'auth_or_line.dart';
