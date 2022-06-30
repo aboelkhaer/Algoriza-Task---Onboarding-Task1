@@ -7,10 +7,13 @@ class AuthController extends GetxController {
   TextEditingController userPasswordController = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
-  RxBool isSignIn = true.obs;
-
-  String validateText(String input, String output) {
-    if (input.isEmpty) return output;
-    return '';
+  @override
+  void onClose() {
+    userEmailController.dispose();
+    userPhoneController.dispose();
+    userPasswordController.dispose();
+    super.onClose();
   }
+
+  RxBool isSignIn = true.obs;
 }
