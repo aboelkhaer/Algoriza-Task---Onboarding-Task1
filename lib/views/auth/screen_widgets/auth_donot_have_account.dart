@@ -26,6 +26,7 @@ class AuthDonotHaveAccount extends GetView<AuthController> {
             controller.formKey.currentState!.reset();
             controller.userPhoneController.clear();
             controller.userEmailController.clear();
+            controller.userPasswordController.clear();
           },
           child: Obx(
             () => Text(

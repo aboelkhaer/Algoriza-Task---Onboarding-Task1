@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 class AuthController extends GetxController {
   TextEditingController userEmailController = TextEditingController();
   TextEditingController userPhoneController = TextEditingController();
+  TextEditingController userPasswordController = TextEditingController();
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   RxBool isSignIn = true.obs;

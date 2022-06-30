@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/views/auth/screen_widgets/auth_Custom_button.dart';
+import 'screen_widgets/auth_main_button.dart';
 
 import '../../controllers/controllers.dart';
-import '../widgets/custom_button.dart';
 import 'screen_widgets/screen_widgets.dart';
 
 class AuthScreen extends GetView<AuthController> {

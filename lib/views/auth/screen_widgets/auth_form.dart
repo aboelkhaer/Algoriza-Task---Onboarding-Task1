@@ -1,7 +1,7 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/views/widgets/custom_text_form.dart';
+import '../../widgets/custom_text_form.dart';
 import '../../../controllers/auth_controller.dart';
 
 class AuthForm extends GetView<AuthController> {
@@ -11,7 +11,7 @@ class AuthForm extends GetView<AuthController> {
   Widget build(BuildContext context) {
     return Form(
       key: controller.formKey,
-      autovalidateMode: AutovalidateMode.onUserInteraction,
+      autovalidateMode: AutovalidateMode.disabled,
       child: Column(
         children: [
           Obx(
@@ -29,7 +29,7 @@ class AuthForm extends GetView<AuthController> {
                           ),
                         ),
                         CustomTextFormField(
-                          controller: controller.userPhoneController,
+                          controller: controller.userEmailController,
                           title: 'Ex@example.com',
                           validateMsg: 'Email is empty',
                           textInputType: TextInputType.emailAddress,
@@ -85,7 +85,7 @@ class AuthForm extends GetView<AuthController> {
                           ),
                         ),
                         CustomTextFormField(
-                          controller: controller.userPhoneController,
+                          controller: controller.userPasswordController,
                           title: 'Password',
                           validateMsg: 'Password is empty',
                           textInputType: TextInputType.text,

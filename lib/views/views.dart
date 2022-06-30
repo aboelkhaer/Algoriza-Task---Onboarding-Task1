@@ -1,2 +1,2 @@
-export 'auth/auth.dart';
-export 'onboarding/onboarding.dart';
+export 'auth/auth_screen.dart';
+export 'onboarding/onboarding_screen.dart';

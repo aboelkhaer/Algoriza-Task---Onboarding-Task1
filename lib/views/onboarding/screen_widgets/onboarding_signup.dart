@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/core/routes/app_pages.dart';
+import '../../../core/routes/app_pages.dart';
 
 class OnboardingSignUp extends StatelessWidget {
   const OnboardingSignUp({Key? key}) : super(key: key);

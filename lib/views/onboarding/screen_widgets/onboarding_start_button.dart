@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:task1_onboarding_auth/controllers/controllers.dart';
-import 'package:task1_onboarding_auth/core/routes/app_pages.dart';
+import '../../../controllers/controllers.dart';
+import '../../../core/routes/app_pages.dart';
 
 import '../../widgets/widgets.dart';
 
