@@ -29,7 +29,7 @@ class AuthScreen extends GetView<AuthController> {
                     SizedBox(height: 16),
                     AuthForm(),
                     AuthForgetPassword(),
-                    AuthCustomButton(),
+                    AuthMainButton(),
                     AuthOrLine(),
                     AuthGoogle(),
                     AuthDonotHaveAccount(),

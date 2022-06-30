@@ -12,8 +12,9 @@ class AuthForgetPassword extends GetView<AuthController> {
       () => controller.isSignIn.value
           ? Container(
               padding: const EdgeInsets.symmetric(
-                horizontal: 20,
-              ),
+                    horizontal: 20,
+                  ) +
+                  const EdgeInsets.only(bottom: 30),
               alignment: Alignment.centerRight,
               child: GestureDetector(
                 onTap: () {},
