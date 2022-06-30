@@ -12,7 +12,7 @@ class AuthTitle extends GetView<AuthController> {
       children: [
         Obx(
           () => Text(
-            controller.isSignIn.value ? 'Sign In' : 'Sign Up',
+            controller.isSignIn.value ? 'Sign In' : 'Register',
             style: const TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,

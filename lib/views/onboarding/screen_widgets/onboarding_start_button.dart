@@ -10,17 +10,21 @@ class OnboardingStartButtton extends GetView<OnboardingController> {
 
   @override
   Widget build(BuildContext context) {
-    return CustomButtom(
-      onPressed: () {
-        controller.isLastPage
-            ? Get.toNamed(AppRoutes.authScreen)
-            : controller.forwardPage();
-      },
-      child: Obx(
-        () => Text(
-          controller.isLastPage ? 'Get Started' : 'Next',
-          style: const TextStyle(
-            color: Colors.white,
+    return Container(
+      margin: const EdgeInsets.symmetric(horizontal: 16) +
+          const EdgeInsets.only(bottom: 25),
+      child: CustomButtom(
+        onPressed: () {
+          controller.isLastPage
+              ? Get.toNamed(AppRoutes.authScreen)
+              : controller.forwardPage();
+        },
+        child: Obx(
+          () => Text(
+            controller.isLastPage ? 'Get Started' : 'Next',
+            style: const TextStyle(
+              color: Colors.white,
+            ),
           ),
         ),
       ),

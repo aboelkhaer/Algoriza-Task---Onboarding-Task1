@@ -20,15 +20,11 @@ class AuthGoogle extends GetView<AuthController> {
             'assets/images/google.png',
             height: 20,
           ),
-          const SizedBox(width: 15),
-          Obx(
-            () => Text(
-              controller.isSignIn.value
-                  ? 'Sign in with Google'
-                  : 'Sign up with Google',
-              style: const TextStyle(
-                color: Colors.blue,
-              ),
+          const SizedBox(width: 8),
+          const Text(
+            'Sign with Google',
+            style: TextStyle(
+              color: Colors.blue,
             ),
           ),
         ],

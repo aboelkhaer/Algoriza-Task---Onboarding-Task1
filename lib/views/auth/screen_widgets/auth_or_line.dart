@@ -6,7 +6,7 @@ class AuthOrLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 10, bottom: 30),
+      margin: const EdgeInsets.only(top: 5, bottom: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

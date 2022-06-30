@@ -10,20 +10,17 @@ class AuthForgetPassword extends GetView<AuthController> {
     return Obx(
       () => controller.isSignIn.value
           ? Container(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 20,
+              ),
               alignment: Alignment.centerRight,
-              child: Container(
-                padding: const EdgeInsets.symmetric(
-                  vertical: 8,
-                  horizontal: 20,
-                ),
-                child: GestureDetector(
-                  onTap: () {},
-                  child: Text(
-                    'Forgot Password?',
-                    style: TextStyle(
-                      color: Colors.grey[700],
-                      fontSize: 14,
-                    ),
+              child: GestureDetector(
+                onTap: () {},
+                child: Text(
+                  'Forgot Password?',
+                  style: TextStyle(
+                    color: Colors.grey[700],
+                    fontSize: 14,
                   ),
                 ),
               ),

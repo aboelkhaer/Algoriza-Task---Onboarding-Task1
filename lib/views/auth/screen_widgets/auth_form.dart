@@ -14,12 +14,48 @@ class AuthForm extends GetView<AuthController> {
       autovalidateMode: AutovalidateMode.onUserInteraction,
       child: Column(
         children: [
+          Obx(
+            () => SizedBox(
+              child: controller.isSignIn.value
+                  ? Container()
+                  : Column(
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.symmetric(vertical: 10),
+                          child: Row(
+                            children: const [
+                              Text('Email', style: TextStyle(fontSize: 16)),
+                            ],
+                          ),
+                        ),
+                        CustomTextFormField(
+                          controller: controller.userPhoneController,
+                          title: 'Ex@example.com',
+                          validateMsg: 'Email is empty',
+                          textInputType: TextInputType.emailAddress,
+                        ),
+                      ],
+                    ),
+            ),
+          ),
+          const SizedBox(
+            height: 8,
+          ),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 10),
+            child: Row(
+              children: const [
+                Text('Phone Number', style: TextStyle(fontSize: 16)),
+              ],
+            ),
+          ),
           SizedBox(
             height: 80,
             child: CustomTextFormField(
               controller: controller.userPhoneController,
               title: '+20 1987654321',
               validateMsg: 'Phone is empty',
+              textInputType: TextInputType.phone,
               prefix: SizedBox(
                 width: 100,
                 child: CountryCodePicker(
@@ -32,6 +68,32 @@ class AuthForm extends GetView<AuthController> {
                   padding: EdgeInsets.zero,
                 ),
               ),
+            ),
+          ),
+          Obx(
+            () => SizedBox(
+              child: controller.isSignIn.value
+                  ? Container()
+                  : Column(
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.only(bottom: 10),
+                          child: Row(
+                            children: const [
+                              Text('Password', style: TextStyle(fontSize: 16)),
+                            ],
+                          ),
+                        ),
+                        CustomTextFormField(
+                          controller: controller.userPhoneController,
+                          title: 'Password',
+                          validateMsg: 'Password is empty',
+                          textInputType: TextInputType.text,
+                          isSecure: true,
+                        ),
+                        const SizedBox(height: 16),
+                      ],
+                    ),
             ),
           ),
         ],

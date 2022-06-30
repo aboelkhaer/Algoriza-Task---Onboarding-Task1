@@ -6,12 +6,14 @@ class CustomTextFormField extends StatelessWidget {
   final String validateMsg;
   final bool isSecure;
   final Widget? prefix;
+  final TextInputType textInputType;
 
   const CustomTextFormField({
     Key? key,
     required this.controller,
     required this.title,
     required this.validateMsg,
+    required this.textInputType,
     this.prefix,
     this.isSecure = false,
   }) : super(key: key);
@@ -23,7 +25,7 @@ class CustomTextFormField extends StatelessWidget {
         return value!.isNotEmpty ? null : validateMsg;
       },
       controller: controller,
-      keyboardType: TextInputType.emailAddress,
+      keyboardType: textInputType,
       obscureText: isSecure,
       decoration: InputDecoration(
         prefixIcon: prefix,
